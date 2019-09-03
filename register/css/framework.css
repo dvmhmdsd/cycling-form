@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Cairo&display=swap");
 /* remove the default style of the layout of elements */
 html {
   display: flex;
@@ -11,7 +11,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 body {
@@ -54,8 +54,8 @@ a {
 }
 
 h1 {
-    line-height: 1;
-    margin: 17px;
+  line-height: 1;
+  margin: 17px;
 }
 
 /* color */
@@ -64,32 +64,38 @@ h1 {
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* image */
 img {
-  max-width: 25%;
-  height: auto;
+  max-width: 13%;
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 25%;
+    height: auto;
+  }
 }
 
 /* validation */
-input, 
+input,
 label,
 select,
 textarea {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 @media (min-width: 991px) {
-    .half {
-        float: left;
-        width: 49%;
-    }
-    .half:not(:last-of-type) {
-        margin-right: 1%;
-    }
+  .half {
+    float: left;
+    width: 49%;
+  }
+  .half:not(:last-of-type) {
+    margin-right: 1%;
+  }
 }
 
 .btn {
@@ -105,5 +111,3 @@ textarea {
 .btn:hover {
   background-color: rgba(12, 104, 171, 1);
 }
-
-
